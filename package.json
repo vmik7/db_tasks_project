@@ -1,0 +1,29 @@
+{
+  "name": "db_tasks_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vmik7/db_tasks_project.git"
+  },
+  "keywords": [
+    "Node.js",
+    "express.js",
+    "MySQL",
+    "ejs"
+  ],
+  "author": "vmik7 <vmik7@yandex.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vmik7/db_tasks_project/issues"
+  },
+  "homepage": "https://github.com/vmik7/db_tasks_project#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
