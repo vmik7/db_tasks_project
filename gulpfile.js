@@ -40,7 +40,7 @@ let uglify = require('gulp-uglify-es').default;
 function browserSyncFunction() {
     browserSync.init({
         server: {
-            baseDir: './' + projectFolder + '/'
+            baseDir: './'
         },
         port: 3000,
         notify: false,

@@ -7,9 +7,244 @@
     <title>DB</title>
 
     <link rel="stylesheet" href="css/null.css">
+
+    <link rel="stylesheet" href="../node_modules/muicss/dist/css/mui.min.css">
+    <script src="../node_modules/muicss/dist/js/mui.min.js"></script>
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="page__body">
-    Hello world
+    <div class="mui-container-fluid page__container">
+        <div class="mui-panel page__content content">
+            <div class="filter">
+                <div class="filter__head">
+                    <h2>Фильтр</h2>
+                    <button class="mui-btn mui-btn--flat mui-btn--danger filter__clear-button">Сбросить</button>
+                </div>
+                <div class="tag-line">
+                    <button class="tag tag_color_red tag_active">Документы</button>
+                    <button class="tag tag_color_pink tag_active">Яндекс</button>
+                    <button class="tag tag_color_purple tag_active">Универ</button>
+                    <button class="tag tag_color_deep-purple tag_active">Дом</button>
+                    <button class="tag tag_color_indigo tag_active">Работа</button>
+                    <button class="tag tag_color_blue tag_active">Хозяйство</button>
+                    <button class="tag tag_color_light-blue tag_active">Сад</button>
+                    <button class="tag tag_color_cyan tag_active">Экзамены</button>
+                    <button class="tag tag_color_teal tag_active">Какой-то тег</button>
+                    <button class="tag tag_color_green tag_active">Какой-то тег</button>
+                    <button class="tag tag_color_light-green tag_active">Какой-то тег</button>
+                    <button class="tag tag_color_lime tag_active">Какой-то тег</button>
+                    <button class="tag tag_color_yellow tag_active">Какой-то тег</button>
+                    <button class="tag tag_color_amber tag_active">Какой-то тег</button>
+                    <button class="tag tag_color_orange tag_active">Какой-то тег</button>
+                    <button class="tag tag_color_brown tag_active">Какой-то тег</button>
+                    <button class="tag tag_color_brown">Какой-то тег</button>
+                </div>
+            </div>
+
+            <div class="mui-divider content__divider"></div>
+
+            <div class="tasks">
+                <div class="tasks__head">
+                    <h2>Задания</h2>
+                    <button class="mui-btn mui-btn--fab mui-btn--accent tasks__add-button">+</button>
+                </div>
+                <div class="mui-panel task">
+                    <div class="task__body">
+                        <div class="task__title">Документы в Яндекс</div>
+                        <div class="task__text">Сдать ПЦР тест и риложить скан в анкету. Выслать анкету на почту организаторам.</div>
+                        <div class="tag-line task__text">
+                            <button class="tag tag_color_indigo tag_active">Документы</button>
+                            <button class="tag tag_color_red tag_active">Яндекс</button>
+                            <button class="tag tag_color_lime tag_active">Какой-то тег</button>
+                        </div>
+                        <div class="task__date">31 мая 2021</div>
+                    </div>
+                    <div class="task__actions">
+                        <button class="task__icon task__ok">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448.8 448.8" style="enable-background:new 0 0 448.8 448.8;" xml:space="preserve" ><polygon points="142.8,323.85 35.7,216.75 0,252.45 142.8,395.25 448.8,89.25 413.1,53.55"/></svg>
+                        </button>
+                        <button class="task__icon task__edit">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 383.947 383.947" style="enable-background:new 0 0 448.8 448.8;" xml:space="preserve"><polygon points="0,303.947 0,383.947 80,383.947 316.053,147.893 236.053,67.893"/> <path d="M377.707,56.053L327.893,6.24c-8.32-8.32-21.867-8.32-30.187,0l-39.04,39.04l80,80l39.04-39.04 C386.027,77.92,386.027,64.373,377.707,56.053z"/></svg>
+                        </button>
+                        <button class="task__icon task__delete">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 384 384" style="enable-background:new 0 0 448.8 448.8;" xml:space="preserve"> <path d="M64,341.333C64,364.907,83.093,384,106.667,384h170.667C300.907,384,320,364.907,320,341.333v-256H64V341.333z"/> <polygon points="266.667,21.333 245.333,0 138.667,0 117.333,21.333 42.667,21.333 42.667,64 341.333,64 341.333,21.333"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="mui-panel task">
+                    <div class="task__body">
+                        <div class="task__title">Документы в Яндекс</div>
+                        <div class="task__text">Сдать ПЦР тест и риложить скан в анкету. Выслать анкету на почту организаторам.</div>
+                        <div class="tag-line task__text">
+                            <button class="tag tag_color_indigo tag_active">Документы</button>
+                            <button class="tag tag_color_red tag_active">Яндекс</button>
+                            <button class="tag tag_color_lime tag_active">Какой-то тег</button>
+                        </div>
+                        <div class="task__date">31 мая 2021</div>
+                    </div>
+                    <div class="task__actions">
+                        <button class="task__icon task__ok">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448.8 448.8" style="enable-background:new 0 0 448.8 448.8;" xml:space="preserve" ><polygon points="142.8,323.85 35.7,216.75 0,252.45 142.8,395.25 448.8,89.25 413.1,53.55"/></svg>
+                        </button>
+                        <button class="task__icon task__edit">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 383.947 383.947" style="enable-background:new 0 0 448.8 448.8;" xml:space="preserve"><polygon points="0,303.947 0,383.947 80,383.947 316.053,147.893 236.053,67.893"/> <path d="M377.707,56.053L327.893,6.24c-8.32-8.32-21.867-8.32-30.187,0l-39.04,39.04l80,80l39.04-39.04 C386.027,77.92,386.027,64.373,377.707,56.053z"/></svg>
+                        </button>
+                        <button class="task__icon task__delete">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 384 384" style="enable-background:new 0 0 448.8 448.8;" xml:space="preserve"> <path d="M64,341.333C64,364.907,83.093,384,106.667,384h170.667C300.907,384,320,364.907,320,341.333v-256H64V341.333z"/> <polygon points="266.667,21.333 245.333,0 138.667,0 117.333,21.333 42.667,21.333 42.667,64 341.333,64 341.333,21.333"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="mui-panel task">
+                    <div class="task__body">
+                        <div class="task__title">Документы в Яндекс</div>
+                        <div class="task__text">Сдать ПЦР тест и риложить скан в анкету. Выслать анкету на почту организаторам.</div>
+                        <div class="tag-line task__text">
+                            <button class="tag tag_color_indigo tag_active">Документы</button>
+                            <button class="tag tag_color_red tag_active">Яндекс</button>
+                            <button class="tag tag_color_lime tag_active">Какой-то тег</button>
+                        </div>
+                        <div class="task__date">31 мая 2021</div>
+                    </div>
+                    <div class="task__actions">
+                        <button class="task__icon task__ok">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448.8 448.8" style="enable-background:new 0 0 448.8 448.8;" xml:space="preserve" ><polygon points="142.8,323.85 35.7,216.75 0,252.45 142.8,395.25 448.8,89.25 413.1,53.55"/></svg>
+                        </button>
+                        <button class="task__icon task__edit">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 383.947 383.947" style="enable-background:new 0 0 448.8 448.8;" xml:space="preserve"><polygon points="0,303.947 0,383.947 80,383.947 316.053,147.893 236.053,67.893"/> <path d="M377.707,56.053L327.893,6.24c-8.32-8.32-21.867-8.32-30.187,0l-39.04,39.04l80,80l39.04-39.04 C386.027,77.92,386.027,64.373,377.707,56.053z"/></svg>
+                        </button>
+                        <button class="task__icon task__delete">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 384 384" style="enable-background:new 0 0 448.8 448.8;" xml:space="preserve"> <path d="M64,341.333C64,364.907,83.093,384,106.667,384h170.667C300.907,384,320,364.907,320,341.333v-256H64V341.333z"/> <polygon points="266.667,21.333 245.333,0 138.667,0 117.333,21.333 42.667,21.333 42.667,64 341.333,64 341.333,21.333"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="mui-panel task">
+                    <div class="task__body">
+                        <div class="task__title">Документы в Яндекс</div>
+                        <div class="task__text">Сдать ПЦР тест и риложить скан в анкету. Выслать анкету на почту организаторам.</div>
+                        <div class="tag-line task__text">
+                            <button class="tag tag_color_indigo tag_active">Документы</button>
+                            <button class="tag tag_color_red tag_active">Яндекс</button>
+                            <button class="tag tag_color_lime tag_active">Какой-то тег</button>
+                        </div>
+                        <div class="task__date">31 мая 2021</div>
+                    </div>
+                    <div class="task__actions">
+                        <button class="task__icon task__ok">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448.8 448.8" style="enable-background:new 0 0 448.8 448.8;" xml:space="preserve" ><polygon points="142.8,323.85 35.7,216.75 0,252.45 142.8,395.25 448.8,89.25 413.1,53.55"/></svg>
+                        </button>
+                        <button class="task__icon task__edit">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 383.947 383.947" style="enable-background:new 0 0 448.8 448.8;" xml:space="preserve"><polygon points="0,303.947 0,383.947 80,383.947 316.053,147.893 236.053,67.893"/> <path d="M377.707,56.053L327.893,6.24c-8.32-8.32-21.867-8.32-30.187,0l-39.04,39.04l80,80l39.04-39.04 C386.027,77.92,386.027,64.373,377.707,56.053z"/></svg>
+                        </button>
+                        <button class="task__icon task__delete">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 384 384" style="enable-background:new 0 0 448.8 448.8;" xml:space="preserve"> <path d="M64,341.333C64,364.907,83.093,384,106.667,384h170.667C300.907,384,320,364.907,320,341.333v-256H64V341.333z"/> <polygon points="266.667,21.333 245.333,0 138.667,0 117.333,21.333 42.667,21.333 42.667,64 341.333,64 341.333,21.333"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mui-panel page__sidebar sidebar">
+            <h2>Статистика</h2>
+            <div class="sidebar__content">
+                <div class="sidebar__item sidebar-item">
+                    <div class="sidebar-item__count">2</div>
+                    <button class="sidebar-item__tag tag tag_color_indigo tag_active">Документы</button>
+                </div>
+                <div class="sidebar__item sidebar-item">
+                    <div class="sidebar-item__count">2</div>
+                    <button class="sidebar-item__tag tag tag_color_indigo tag_active">Документы</button>
+                </div>
+                <div class="sidebar__item sidebar-item">
+                    <div class="sidebar-item__count">2</div>
+                    <button class="sidebar-item__tag tag tag_color_indigo tag_active">Документы</button>
+                </div>
+                <div class="sidebar__item sidebar-item">
+                    <div class="sidebar-item__count">2</div>
+                    <button class="sidebar-item__tag tag tag_color_indigo tag_active">Документы</button>
+                </div>
+                <div class="sidebar__item sidebar-item">
+                    <div class="sidebar-item__count">2</div>
+                    <button class="sidebar-item__tag tag tag_color_indigo tag_active">Документы</button>
+                </div>
+                <div class="sidebar__item sidebar-item">
+                    <div class="sidebar-item__count">2</div>
+                    <button class="sidebar-item__tag tag tag_color_indigo tag_active">Документы</button>
+                </div>
+                <div class="sidebar__item sidebar-item">
+                    <div class="sidebar-item__count">2</div>
+                    <button class="sidebar-item__tag tag tag_color_indigo tag_active">Документы</button>
+                </div>
+                <div class="sidebar__item sidebar-item">
+                    <div class="sidebar-item__count">2</div>
+                    <button class="sidebar-item__tag tag tag_color_indigo tag_active">Документы</button>
+                </div>
+                <div class="sidebar__item sidebar-item">
+                    <div class="sidebar-item__count">2</div>
+                    <button class="sidebar-item__tag tag tag_color_indigo tag_active">Документы</button>
+                </div>
+                <div class="sidebar__item sidebar-item">
+                    <div class="sidebar-item__count">2</div>
+                    <button class="sidebar-item__tag tag tag_color_indigo tag_active">Документы</button>
+                </div>
+                <div class="sidebar__item sidebar-item">
+                    <div class="sidebar-item__count">2</div>
+                    <button class="sidebar-item__tag tag tag_color_indigo tag_active">Документы</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mui-panel popup popup_type_task">
+        <form class="mui-form">
+            <legend>Новое задание</legend>
+            <div class="mui-textfield mui-textfield--float-label">
+                <input type="text">
+                <label>Название</label>
+            </div>
+            <div class="mui-textfield">
+                <input type="date">
+                <label>Дедлайн</label>
+            </div>
+            <div class="mui-textfield mui-textfield--float-label">
+                <textarea></textarea>
+                <label>Текст задания</label>
+            </div>
+            <div class="popup-tags">
+                <div class="popup-tags__head">
+                    <h3>Теги</h3>
+                    <button class="mui-btn mui-btn--small mui-btn--flat mui-btn--danger popup-tags__clear-button">Сбросить</button>
+                </div>
+                <div class="tag-line">
+                    <button class="tag tag_color_red">Документы</button>
+                    <button class="tag tag_color_pink">Яндекс</button>
+                    <button class="tag tag_color_purple">Универ</button>
+                    <button class="tag tag_color_deep-purple">Дом</button>
+                    <button class="tag tag_color_indigo">Работа</button>
+                    <button class="tag tag_color_blue">Хозяйство</button>
+                    <button class="tag tag_color_light-blue">Сад</button>
+                    <button class="tag tag_color_cyan">Экзамены</button>
+                    <button class="tag tag_color_teal">Какой-то тег</button>
+                </div>
+                <h3>Новый тег</h3>
+                <div class="mui-form--inline">
+                    <div class="mui-textfield">
+                        <input type="text">
+                        <label>Имя</label>
+                    </div>
+                    <div class="mui-select">
+                        <select>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                        </select>
+                        <label>Цвет</label>
+                      </div>
+                    <button class="mui-btn">Создать</button>
+                </div>
+            </div>
+            <button type="submit" class="mui-btn mui-btn--primary">Добавить</button>
+        </form>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 </html>

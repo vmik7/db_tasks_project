@@ -17,6 +17,9 @@
 
 // VARIABLES & MIXINS
 
+@import "../../node_modules/muicss/dist/extra/mui-colors.css";
+@import "../../node_modules/muicss/lib/sass/mui-colors.scss";
+
 // Maximum container width
 $max-container-width: 1170;
 
@@ -34,11 +37,15 @@ $md4: 480;
 
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 
 // FONTS
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=cyrillic-ext&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&subset=cyrillic-ext&display=swap);
+// @import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=cyrillic-ext&display=swap);
+// @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&subset=cyrillic-ext&display=swap);
 
 // Google fonts: cyrillic support (add this suffix on URL)
 // &subset=cyrillic-ext
@@ -79,4 +86,229 @@ $md4: 480;
         max-width: 100%;
         padding: 0 10px;
     }
+}
+
+
+
+
+.page {
+
+}
+.page__body {
+    background: #eee;
+    padding: 15px 0;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page__container {
+    flex: 1;
+    width: 100%;
+
+    display: flex;
+}
+.page__content {
+    flex: 1;
+    margin: 0;
+    margin-right: 15px;
+}
+.page__sidebar {
+    margin: 0;
+    flex: 0 0 250px;
+}
+.content {
+}
+.content__divider {
+    margin: 20px 0;
+}
+.filter {
+}
+.filter__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tag-line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.tag {
+    border: 0;
+    padding: 0 15px;
+    border-radius: 15px;
+    line-height: 30px;
+    background: mui-color('grey', '100');
+    color: mui-color('grey', '900');
+}
+.tag_color_red.tag_active {
+    background: mui-color('red', '100');
+    color: mui-color('red', '900');
+}
+.tag_color_pink.tag_active {
+    background: mui-color('pink', '100');
+    color: mui-color('pink', '900');
+}
+.tag_color_purple.tag_active {
+    background: mui-color('purple', '100');
+    color: mui-color('purple', '900');
+}
+.tag_color_deep-purple.tag_active {
+    background: mui-color('deep-purple', '100');
+    color: mui-color('deep-purple', '900');
+}
+.tag_color_indigo.tag_active {
+    background: mui-color('indigo', '100');
+    color: mui-color('indigo', '900');
+}
+.tag_color_blue.tag_active {
+    background: mui-color('blue', '100');
+    color: mui-color('blue', '900');
+}
+.tag_color_light-blue.tag_active {
+    background: mui-color('light-blue', '100');
+    color: mui-color('light-blue', '900');
+}
+.tag_color_cyan.tag_active {
+    background: mui-color('cyan', '100');
+    color: mui-color('cyan', '900');
+}
+.tag_color_teal.tag_active {
+    background: mui-color('teal', '100');
+    color: mui-color('teal', '900');
+}
+.tag_color_green.tag_active {
+    background: mui-color('green', '100');
+    color: mui-color('green', '900');
+}
+.tag_color_light-green.tag_active {
+    background: mui-color('light-green', '100');
+    color: mui-color('light-green', '900');
+}
+.tag_color_lime.tag_active {
+    background: mui-color('lime', '100');
+    color: mui-color('lime', '900');
+}
+.tag_color_yellow.tag_active {
+    background: mui-color('yellow', '100');
+    color: mui-color('yellow', '900');
+}
+.tag_color_amber.tag_active {
+    background: mui-color('amber', '100');
+    color: mui-color('amber', '900');
+}
+.tag_color_orange.tag_active {
+    background: mui-color('orange', '100');
+    color: mui-color('orange', '900');
+}
+.tag_color_brown.tag_active {
+    background: mui-color('brown', '100');
+    color: mui-color('brown', '900');
+}
+.tasks__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.tasks__add-button {
+    font-size: 20px;
+}
+.task {
+    display: flex;
+    min-height: 180px;
+}
+.task__body {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+.task__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.task__text {
+    margin-bottom: 15px;
+}
+.task__date {
+    margin-top: auto;
+    color: mui-color('grey', '500');
+}
+.task__actions {
+    flex: 0 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.task__icon {
+    background: none;
+    border: none;
+    padding: 0;
+    svg {
+        max-width: 100%;
+        path, polygon {
+            fill: #eee;
+            transition: all 0.3s ease;
+        }
+    }
+    width: 20px;
+}
+.task__ok {
+    width: 50px;
+}
+.task__ok:hover svg path,
+.task__ok:hover svg polygon {
+    fill: mui-color('green', '500');
+}
+.task__edit:hover svg path,
+.task__edit:hover svg polygon {
+    fill: mui-color('blue', '500');
+}
+.task__delete:hover svg path,
+.task__delete:hover svg polygon {
+    fill: mui-color('red', '500');
+}
+
+.sidebar__content {
+    
+}
+.sidebar__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+.sidebar-item {
+    display: flex;
+    align-items: center;
+}
+.sidebar-item__count {
+    font-size: 20;
+    font-weight: bold;
+
+    display: flex;
+    &::after {
+        content: "x";
+        display: block;
+        margin: 0 5px;
+        font-weight: normal;
+    }
+}
+
+.popup {
+    max-width: 700px;
+    min-height: 300px;
+    margin: 100px auto;
+    background: #fff;
+    display: none;
+}
+.popup-tags {
+    margin: 10px 0 20px 0;
+}
+.popup-tags__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
