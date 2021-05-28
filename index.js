@@ -35,6 +35,13 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/dist/index.html');
 });
 
+app.get('/src/mui.min.css', (req, res) => {
+    res.sendFile(__dirname + '/node_modules/muicss/dist/css/mui.min.css');
+});
+app.get('/src/mui.min.js', (req, res) => {
+    res.sendFile(__dirname + '/node_modules/muicss/dist/js/mui.min.js');
+});
+
 // Запрос всех заданий, каждое задание выводится со списком тегов
 app.post('/api/tasks', express.json(), (req, res) => {
     connection.query('SELECT Задания.id AS id, Задания.Название AS title, Задания.Текст AS text, Задания.Дедлайн AS deadline, Теги.id AS tag_id, Теги.Название AS tag, Теги.Цвет AS color FROM Задания LEFT JOIN Назначение ON Задания.id = Назначение.Задание LEFT JOIN Теги ON Назначение.Тег = Теги.id ORDER BY Задания.id', (err, results, fields) => {
