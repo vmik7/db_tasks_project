@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npm install && gulp build",
     "start": "node index",
-    "debug": "nodemon index",
+    "dev": "nodemon index",
     "layout": "gulp"
   },
   "repository": {

@@ -14,7 +14,7 @@ let path = {
         html: [sourceFolder + '/*.html', '!' + sourceFolder + '/_*.html'],
         readyCss: [sourceFolder + '/scss/null.scss'],
         css: [sourceFolder + '/scss/styles.scss'],
-        js: sourceFolder + '/js/main.js',
+        js: sourceFolder + '/js/*.js',
         img: sourceFolder + '/img/**/*.{jpg,png,svg,gif,ico,webp}'
     },
     watch: {
@@ -40,7 +40,7 @@ let uglify = require('gulp-uglify-es').default;
 function browserSyncFunction() {
     browserSync.init({
         server: {
-            baseDir: './'
+            baseDir: './' + projectFolder + '/'
         },
         port: 3000,
         notify: false,

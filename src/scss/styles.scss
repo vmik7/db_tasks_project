@@ -17,7 +17,6 @@
 
 // VARIABLES & MIXINS
 
-@import "../../node_modules/muicss/dist/extra/mui-colors.css";
 @import "../../node_modules/muicss/lib/sass/mui-colors.scss";
 
 // Maximum container width
@@ -302,7 +301,6 @@ $md4: 480;
     min-height: 300px;
     margin: 100px auto;
     background: #fff;
-    display: none;
 }
 .popup-tags {
     margin: 10px 0 20px 0;
